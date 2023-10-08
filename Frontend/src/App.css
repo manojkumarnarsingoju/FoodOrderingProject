@@ -7,16 +7,13 @@ body {
   padding: 0px;
   overflow-x: hidden;
   /* background-color: aqua; */
-  background-image: linear-gradient(
-      0deg,
-      rgba(250, 250, 250, 0.801),
-      rgba(250, 250, 250, 0.836)
-    ),
-    url("../public/images/template.jpeg");
+  background-image: url("../public/images/back.jpg"), linear-gradient(rgb(215, 203, 203),rgb(248, 184, 134),rgb(229, 163, 188));
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.note{
+  color: white;
+}
 /* Scroll Bar */
 
 ::-webkit-scrollbar-track {
@@ -38,12 +35,12 @@ body {
 /* Nav */
 
 .logo {
-  width: 40%;
+  width: 40%; 
   margin-left: 20%;
 }
 
 nav {
-  background-color: #be521f;
+  background-color: rgb(66, 27, 21);
   padding: 1rem 1rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,7 +124,7 @@ nav {
 }
 
 #view_btn {
-  background-color: rgb(190, 82, 31);
+  background-color: rgb(118, 48, 15);
   color: white;
 }
 
@@ -205,7 +202,7 @@ footer {
 #cart_btn,
 #review_btn {
   border-radius: 2rem;
-  background-color: rgb(190, 82, 31);
+  background-color: rgb(100, 43, 17);
   border: none;
   padding: 0.5rem 2rem;
 }
@@ -292,7 +289,7 @@ footer {
 }
 
 #card_item_price {
-  color: #be521f;
+  color: #7d3716;
   font-weight: bold;
   font-size: 1.4rem;
 }
@@ -304,15 +301,15 @@ footer {
 }
 #checkout_btn,
 .review-btn {
-  background-color: #be521f;
-  border-color: #be521f;
+  background-color: #843c1a;
+  border-color: #8e421f;
   margin-top: 2rem;
   border-radius: 5rem;
 }
 
 #view_order_details {
-  background-color: #be521f;
-  border-color: #be521f;
+  background-color: #974824;
+  border-color: #8f411d;
 }
 
 #order_summary {
@@ -356,6 +353,7 @@ footer {
   align-items: center;
   margin-top: 5rem;
   font-weight: 700;
+  color: white;
 }
 
 .wrapper form {
@@ -363,8 +361,8 @@ footer {
 }
 
 .wrapper form .btn {
-  background-color: rgb(190, 82, 31);
-  border-color: rgb(190, 82, 31);
+  background-color: rgb(137, 62, 27);
+  border-color: rgb(148, 70, 33);
   color: white;
   margin-top: 2.5rem;
 }
@@ -444,7 +442,7 @@ footer {
 }
 
 .active-step {
-  background: #be521f;
+  background: #7e3716;
   color: #fff;
 }
 
@@ -452,7 +450,7 @@ footer {
   float: left;
   width: 0;
   border-top: 20px solid transparent;
-  border-left: 15px solid#be521f;
+  border-left: 15px solid#94431e;
   border-bottom: 20px solid transparent;
   margin-left: -1px;
 }
@@ -460,9 +458,9 @@ footer {
 .triangle2-active {
   width: 0;
   float: left;
-  border-top: 20px solid #be521f;
+  border-top: 20px solid #8e4421;
   border-left: 15px solid #fff;
-  border-bottom: 20px solid #be521f;
+  border-bottom: 20px solid #853d1b;
   margin-right: -1px;
 }
 
@@ -498,8 +496,9 @@ h2 {
   font-weight: 800;
   /* color: grey; */
   margin-top: 2rem;
-  text-shadow: 2px 2px white;
+  
   letter-spacing: 2px;
+  color: white;
 }
 .user-info span {
   /* font-weight: 800; */
@@ -516,8 +515,8 @@ h2 {
 }
 
 #edit_profile {
-  background-color: #be521f;
-  border-color: #be521f;
+  background-color: #df8358;
+  border-color: #8e4422;
 }
 
 /* Confirm Order */
@@ -545,11 +544,11 @@ h2 {
 }
 
 .page-link {
-  color: rgb(190, 82, 31);
+  color: rgb(136, 66, 34);
 }
 
 .page-link:hover {
-  color: rgb(190, 82, 31);
+  color: rgb(134, 67, 36);
 }
 
 /* Admin Sidebar */
@@ -709,7 +708,7 @@ ul.CTAs a {
   text-align: justify;
 }
 #view_detail {
-  color: rgb(190, 82, 31);
+  color: rgb(113, 53, 25);
 }
 
 #view_detail:hover {

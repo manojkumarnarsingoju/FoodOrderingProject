@@ -97,7 +97,7 @@ const Delivery = () => {
 
 
                     </div>
-                    <button id='shipping_btn' type='submit' className='btn btn-block py-3'> Submit</button>
+                    <button id='shipping_btn' type='submit' className='btn btn-block py-3' onClick={submitHandler}> Submit</button>
                 </form>
             </div> 
 

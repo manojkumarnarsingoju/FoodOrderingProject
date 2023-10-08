@@ -8,9 +8,9 @@ const Footer = () => {
 
     </p>
     </div>
-      {/* <footer> 
+      <footer> 
         <p className='text-center'> Food Delivery Website 2023-2024 all rights reserved </p>
-      </footer> */}
+      </footer>
     </>
   );
 };

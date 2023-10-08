@@ -12,7 +12,7 @@ import {
 import { useSearchParams } from "react-router-dom";
 
 const Fooditem = ({ fooditem }) => {
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
   const [showButtons, setShowButtons] = useState(false);
   const dispatch = useDispatch();
   const alert = useAlert();

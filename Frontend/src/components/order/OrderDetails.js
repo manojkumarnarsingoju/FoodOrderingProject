@@ -9,23 +9,36 @@ import { getOrderDetails,clearErrors } from "../../actions/orderActions";
 const OrderDetails = ({}) => {
   const alert = useAlert();
   const dispatch = useDispatch();
-  const {id} = useParams();
+  const { id } = useParams();
   const {
-    loading, error, order={},
+    loading,
+    error,
+    order = {},
   } = useSelector((state) => state.orderDetails);
 
-  const {deliveryInfo,orderItems, paymentInfo, user, finalTotal, orderStatus} = order;
+  const {
+    deliveryInfo,
+    orderItems,
+    paymentInfo,
+    user,
+    finalTotal,
+    orderStatus,
+  } = order;
 
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(getOrderDetails(id));
-    if(error) {
+    if (error) {
       alert.error(error);
       dispatch(clearErrors());
-
     }
-  },[dispatch,alert,error, id]);
-const deliveryDetails = deliveryInfo && `${deliveryInfo.address},${deliveryInfo.city},${deliveryInfo.postalCode},${deliveryInfo.country}`;
-const isPaid = paymentInfo && paymentInfo.status === "succeeded"?true:false;
+  }, [dispatch, alert, error, id]);
+
+  const deliveryDetails =
+    deliveryInfo &&
+    `${deliveryInfo.address}, ${deliveryInfo.city}, ${deliveryInfo.postalCode}, ${deliveryInfo.country}`;
+
+  const isPaid =
+    paymentInfo && paymentInfo.status === "succeeded" ? true : false;
 
   return (
     <>

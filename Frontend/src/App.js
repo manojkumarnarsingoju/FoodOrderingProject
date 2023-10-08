@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import Search from './components/layout/Search';
 import Menu from './components/Menu';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cart from './components/cart/Cart';

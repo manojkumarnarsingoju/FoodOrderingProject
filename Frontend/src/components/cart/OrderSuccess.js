@@ -2,36 +2,34 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../../actions/cartAction";
-
 const OrderSuccess = () => {
   const dispatch = useDispatch();
-  useEffect(() =>{
-    const simulateSuccessfulPayment =() =>{
-      setTimeout(() =>{
-        dispatch(clearCart());
-
-      },2000 );
-    };
-    simulateSuccessfulPayment();
-  }, [dispatch]);
+  useEffect(() => {
+    const simulateSuccessfulPayment = () => {
+      setTimeout(() => {
+        dispatch(clearCart())
+      }, 2000)
+    }
+    simulateSuccessfulPayment()
+  }, [dispatch])
   return (
     <>
       <div className="row justify-content-center">
         <div className="col-6 mt-5 text-center">
           <svg
-            className="checkmark"
+            class="checkmark"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 52 52"
           >
             <circle
-              className="checkmark__circle"
+              class="checkmark__circle"
               cx="26"
               cy="26"
               r="25"
               fill="none"
             />
             <path
-              className="checkmark__check"
+              class="checkmark__check"
               fill="none"
               d="M14.1 27.2l7.1 7.2 16.7-16.8"
             />
